@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="ga.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-12 d-flex justify-content-center mb-5">
+
+                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
+                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="gallery" id="gallery">
+
+            <!-- Grid column -->
+            <div class="mb-5 pics animation all 1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="container">
+                            <br />
+                            <h2>Area of Screen</h2>
+                            <br />
+                            <div class="form-group">
+                                <label for="rec_len">Enter Screen Length:</label>
+                                <input type="text" class="form-control" id="rec_len">
+                            </div>
+                            <div class="form-group">
+                                <label for="rec_wid">Enter Screen Width:</label>
+                                <input type="text" class="form-control req" id="rec_wid">
+                            </div>
+                            <div class="form-group">
+                                <label for="result">Result:</label>
+                                <input type="text" class="form-control req" id="result" readonly>
+                            </div>
+                            <button type="submit" class="btn btn-primary" onclick="findAreaOfSquare()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 2">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 2">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+
+    </div>
+</body>
+
+</html>
