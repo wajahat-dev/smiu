@@ -56,55 +56,29 @@ function TemperatureConverstion() {
 
 
 
-function pi_archimedes(n) {
-    polygon_sides = 2;
-    polygon_edge_length_squared = 2;
-    // var n_value = document.getElementById("n_value ").value;
-    var n_value = n;
-    for (var i = 0; i < n_value; i++) {
-        polygon_edge_length_squared = Math.sqrt(2 - 2 * (1 - polygon_edge_length_squared / 4));
-        polygon_sides *= 2;
-        return (polygon_sides * Math.sqrt(polygon_edge_length_squared));
-
-    }
-}
-
-
-
-// places = 2
-// old_result = None
-// for n in range(10*places):
-//     # Do calculations with double precision
-//     getcontext().prec = 2*places
-//     result = pi_archimedes(n)
-//     # Print the result with single precision
-//     getcontext().prec = places
-//     result = +result           # do the rounding on result
-//     print("%3d: %s" % (n, result))
-//     if result == old_result:
-//         break
-//     old_result = result
 
 
 
 function pi_archimedes(n) {
-    var polygon_edge_length_squared = 2;
+    var length = 2;
     var polygon_sides = 2;
     for (var i = 0; i < n; i++) {
-        polygon_edge_length_squared = 2 - (2 * Math.sqrt((1 - polygon_edge_length_squared / 4)));
+        length = 2 - (2 * Math.sqrt((1 - length / 4)));
         polygon_sides *= 2;
     }
-    return (polygon_sides * Math.sqrt(polygon_edge_length_squared));
+    return (polygon_sides * Math.sqrt(length));
 }
 
 function calculation() {
 
-    places = 3;
+    // places = 3;
+    var places = document.getElementById("specifiedPrecision ").value;
     old_result = null;
     for (var n = 0; n < 10 * places; n++) {
         result = pi_archimedes(parseInt(n).toPrecision(8));
         result += parseInt(result).toPrecision(4);
-        console.log('%d: %s', n, result.toFixed(places));
+        // console.log('%d: %s', n, result.toFixed(places));
+        document.getElementById("pieResult ").value = parseFloat(result).toFixed(places);
         if (result == old_result) {
             break;
         }
