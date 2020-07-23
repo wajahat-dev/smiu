@@ -2,6 +2,11 @@
     background: url("13.jpg") center;
     height: 230px;
     margin-bottom: 0;
+    color: white;
+}
+
+.container-fluid h2 {
+    font-size: 44px;
 }
 
 @media (min-width: 768px) {
