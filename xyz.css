@@ -1,0 +1,44 @@
+.jumbotron {
+    background: url("13.jpg") center;
+    height: 230px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .genericContainer {
+        margin: 10px;
+        float: left;
+    }
+    div[class^="col-md"] {
+        width: 50%;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 992px) {
+    div[class^=col-md] {
+        justify-items: center;
+        align-items: center;
+    }
+    .genericContainer {
+        width: 370px;
+        margin-left: 170px;
+    }
+}
+
+.navbar {
+    background-color: saddlebrown;
+}
+
+body {
+    /* background-color: lightgreen;
+     
+    */
+    background: url('photo-1500964757637-c85e8a162699.jpeg') no-repeat center center fixed;
+}
+
+
+/* div[class="^active"] {
+    background-color: saddlebrown;
+    text-decoration: yellowgreen;
+} */
